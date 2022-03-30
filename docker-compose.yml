@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  postgresql:
+    build: ./database
+    ports:
+    - 5433:5432
+
+  jenkins:
+    build: ../jenkins-demo
+    ports:
+    - 8081:8080

@@ -1,0 +1,5 @@
+io/github/jenkinstest/JenkinstestApplication.class
+io/github/jenkinstest/repository/UserRepository.class
+io/github/jenkinstest/controller/UserController.class
+io/github/jenkinstest/service/UserService.class
+io/github/jenkinstest/model/JenkinsUser.class
