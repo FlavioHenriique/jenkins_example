@@ -10,7 +10,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/user")
 public class UserController {
-
+/*
     @Autowired
     private UserService service;
 
@@ -34,5 +34,10 @@ public class UserController {
     public JenkinsUser findById(@RequestParam("id") int id){
         JenkinsUser jenkinsUser = service.findUser(id);
         return jenkinsUser;
+    }
+*/
+    @GetMapping("/teste")
+    public String teste(){
+        return "teste";
     }
 }
