@@ -24,7 +24,7 @@ pipeline {
      stage('NEXUS') {
        steps{
            echo "Deploying the project";
-           bat 'mvn  deploy:deploy-file -DgroupId=**** -DartifactId=**** -Dversion=1.0 -DgeneratePom=true -Dpackaging=jar -DrepositoryId=deploymentRepo -Durl=http://localhost:8080/repository/maven-releases/ -Dfile=target/****-1.0.jar ';
+           sh 'mvn  deploy:deploy-file -DgroupId=**** -DartifactId=**** -Dversion=1.0 -DgeneratePom=true -Dpackaging=jar -DrepositoryId=deploymentRepo -Durl=http://localhost:8080/repository/maven-releases/ -Dfile=target/****-1.0.jar ';
        }
     }
     }
