@@ -38,6 +38,6 @@ public class UserController {
 */
     @GetMapping("/teste")
     public String teste(){
-        return "teste commit";
+        return "teste commits";
     }
 }
