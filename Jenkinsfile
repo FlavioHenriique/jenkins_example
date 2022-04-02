@@ -12,7 +12,7 @@ pipeline {
         stage('MVN PACKAGE') {
        steps{
            echo "packing the project";
-           bat 'mvn package';
+           sh 'mvn package';
        }
        post{
            success {
